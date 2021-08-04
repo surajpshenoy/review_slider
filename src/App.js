@@ -24,7 +24,9 @@ function App() {
 
   useEffect(()=>{
 
-    setInterval(() => {})
+    setInterval(() => {
+      setIndex(index + 1);
+    }, 3000)
 
 
   }, [index]);
