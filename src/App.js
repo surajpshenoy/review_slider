@@ -24,11 +24,11 @@ function App() {
 
   useEffect(()=>{
 
-    setInterval(() => {
+    let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 3000)
-
-
+    }, 3000);
+    //clearing the interval 
+    return ()=> clearInterval(slider);
   }, [index]);
   return (
    <section className="section">
