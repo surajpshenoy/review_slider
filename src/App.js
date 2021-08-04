@@ -21,7 +21,7 @@ function App() {
 
   }, [index, people])
 
-
+  //function for setting the slider timer
   useEffect(()=>{
 
     let slider = setInterval(() => {
